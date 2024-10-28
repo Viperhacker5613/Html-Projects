@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nerko+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+body{
+    background-color: #f3f4f6;
+}
+i{
+    cursor: pointer;
+}
+.nav-bar{
+    height:10vh;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 40px;
+}
+.nav-bar .left-sec a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-bar navbar{
+    display: flex;
+    gap:20px;
+}
+.nav-bar navbar a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.nav-bar .right-sec{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-bar .right-sec p{
+    color:#767C91;
+}
+.nav-bar .right-sec p span{
+    color:black;
+    font-weight: 700;
+}
+.nav-bar .right-sec button{
+    height:35px;
+    width:100px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+}
+.hero{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+}
+.hero .left-sec img{
+    height:340px;
+    width:340px;
+    border-radius: 10px;
+}
+.hero .left-sec p{
+    font-size: 50px;
+}
+.hero .right-sec{
+    display: flex;
+    gap:90px;
+}
+.hero .right-sec .right-part1{
+    line-height: 50px;
+}
+.hero .right-sec .right-part1 .first{
+    font-size: 40px;
+    font-weight: bold;
+}
+.hero .right-sec .right-part1 .second{
+    color:#767C91;
+}
+.hero .right-sec .right-part1 .bt{
+    display: flex;
+    gap:15px;
+}
+.hero .right-sec .right-part1 .bt button{
+    height:35px;
+    width:120px;
+    padding:0 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.hero .right-sec .right-part1 .bt button:nth-child(1){
+    background-color: black;
+    color:white;
+}
+.hero .right-sec .right-part1 .bt button:nth-child(2){
+    width:130px;
+    background-color: white;
+    border:none;
+}
+.hero .right-sec .right-part2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position:relative;
+    bottom: 110px;
+}
+.hero .right-sec .right-part2 a{
+    text-decoration: none;
+    border:0.5px solid #767C91;
+    padding:9px;
+    border-radius: 50%;
+    color:black;
+    font-size: 22px;
+    font-weight: 700;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 40px;
+}
+.skill .left-sec h6{
+    font-size:25px;
+    font-weight: 400;
+}
+.skill .left-sec p{
+    padding:10px 0;
+    font-size: 15px;
+}
+.skill .bt{
+    display: flex;
+    gap: 15px;
+    padding:10px 0;
+}
+.skill .bt button{
+    height: 35px;
+    width: 120px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.skill .bt button:nth-child(1){
+    background-color: black;
+    color:white;
+}
+.skill .bt button:nth-child(2){
+    background-color: white;
+}
+.skill .left-sec{
+    width:50%;
+}
+.skill .right-sec{
+    width:50%;
+}
+.skill .right-sec .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.skill .box i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:60px;
+    text-align: center;
+    padding:20px;
+}
+.skill .box .tex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e5e7eb;
+    padding:20px 0;
+}
+.showcase{
+    padding:50px 40px;
+    height:auto;
+    width:100%;
+    background-color: #E5E7EB;
+}
+.showcase .first{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.showcase .first p{
+    font-size: 30px;
+    font-weight: 300;
+}
+.showcase .first button{
+    height: 40px;
+    width:130px;
+    padding:5px;
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 10px;
+}
+.showcase .second .second-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 0px;
+}
+.showcase .second .second-1 .sec-1{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.showcase .second .second-1 .sec-1 i{
+    background-color: white;
+    border-radius: 50%;
+    padding:10px;
+    font-size: 20px;
+}
+.showcase .second .second-1 .sec-2{
+    display: flex;
+    gap:6rem;
+    padding:30px 0px;
+}
+.showcase .second .second-1 .sec-2 p{
+    font-size: 14px;
+}
+.showcase .second .second-1 .sec-2 i{
+    font-size: 25px;
+}
+.showcase .second .second-2{
+    display: flex;
+    gap:30px;
+}
+.showcase .second .second-2 .card{
+    height:420px;
+    widtH:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative;
+}
+.showcase .second .second-2 .card .img{
+    height:200px;
+    width:100%;
+    overflow: hidden;
+}
+.showcase .second .second-2 .card .img img{
+    padding:20px;
+    width:100%;
+    object-position: top center;
+}
+.showcase .second .second-2 .card .text{
+    padding:25px 20px;
+}
+.showcase .second .second-2 .card .text .text1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.showcase .second .second-2 .card .text .text1 h1{
+    font-size: 25px;
+}
+.showcase .second .second-2 .card p{
+    padding: 10px 0px;
+}
+.showcase .second .second-2 .card button{
+    height: 30px;
+    width:120px;
+    background-color: black;
+    color: white;
+    border-radius: 16px 0px 10px 0px;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+.last-sec{
+    background-color: #f3f4f6;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.last-sec h1{
+    font-weight: 400;
+    padding:30px 0px;
+}
+.last-sec .experience, .award{
+    width:45%;
+}
+.list{
+    line-height:30px;
+}
+.list .list-down, .list-down-left{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.experience .list .list-down i, .award .list .list-down .list-down-left i{
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    padding: 0px 5px;
+}
+.list .list-down p{
+    font-weight: 500;
+}
+.list .list-down span{
+    color:#767C91;
+}
+hr{
+    width:100%;
+    color:#767C91;
+}
+.award .list .list-down{
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.contact #cng{
+    font-weight: 800;
+}
+.contact button{
+    height:30px;
+    width:120px;
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 10px;
+}
+.footer{
+    width:100%;
+    padding:20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer .left{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.footer .left h5{
+    font-size: 19px;
+}
+.footer .left .text-f{
+    display: flex;
+    font-size: 12px;
+}
+.footer .right a{
+    text-decoration: none;
+    color:black;
+    padding: 0px 10px;
+    font-weight: 500;
+}
