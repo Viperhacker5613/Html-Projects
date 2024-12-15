@@ -1,0 +1,111 @@
+:root{
+    --gradient:linear-gradient(45deg, #ff7c7d,#ffda67);
+    --card: #272524;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100%;
+    background: var(--gradient) no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height:300px;
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    background-color: var(--card);
+    border-radius: 25px;
+    transition: 0.1s ease;
+}
+.photo{
+    height:230px;
+    width:400px;
+    margin-left:-30px;
+    transition: 0.1s ease;
+}
+.photo img{
+    height:100%;
+    width:100%;
+    border-radius: 25px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    color:white;
+}
+.smallfaint{
+    color: #aaa9a7;
+}
+.fullfaint{
+    color: #4e4d48;
+}
+.icon{
+    display: flex;
+    gap:15px;
+}
+.icon i{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #38332f;
+}
+.icon #active{
+    border:2px solid pink;
+    padding: 10px;
+}
+@media screen and (max-width:640px) {
+    .card{
+        height:400px;
+        width:450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .photo{
+        height:200px;
+        width:350px;
+        margin-left: 0px;
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+    .photo img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
+    .info{
+        padding: 0px 30px;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:540px) {
+    .photo{
+        height:200px;
+        width:200px;
+        margin-top:-100px;
+        border:10px solid black;
+        border-radius: 50%;
+    }
+    .photo img{
+        border-radius: 50%;
+    }
+}
