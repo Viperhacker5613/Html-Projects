@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Arimo", serif;
+}
+body{
+    background-color: rgb(124, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;;
+}
+img{
+    height: 68px;
+    width: 68px;
+    border: 1px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container{
+    /* background-color: #fff;
+    height:auto;
+    width:600px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    height: auto;
+    width: 600px;
+    /* padding:0px 20px; */
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+/* .tab{
+    padding: 15px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tab .tabs{
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+.tabs::after{
+    content:'';
+    height: 3px;
+    width:0;
+    background-color: purple;
+    left:0%;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+.tabs:hover::after{
+    width: 100%;
+}
+.tab .active{
+    color: purple;
+}
+.content_info{
+    margin-top: 20px;
+}
+.content_info .content{
+    display: none;
+}
+.content_info .active{
+    display: block;
+}
+.content h2{
+    margin-bottom: 20px;
+} */
+
+header{
+    padding: 30px;
+}
+
+.filter{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    height:50px;
+    background-color: gray;
+    color:white;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+button{
+    background-color: transparent;
+    color: #fff;
+}
+.filter .tab1{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+.tab1:nth-child(1){
+    border-radius: 20px 0px 0px 20px;
+}
+.tab1:nth-child(3) {
+    border-radius: 0px 20px 20px 0px;
+}
+.tab1:hover{
+    background-color: olivedrab;
+}
+.all-chats{
+    width:100%;
+    padding: 0px;
+}
+.chat-bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px dotted black;
+    border-right:none;
+    border-left: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.chat-bars:hover{
+    background-color: rgba(128, 128, 128, 0.444);
+}
+.chat-bars:nth-child(1){
+    border-top: none;
+}
+.chat-bars .middle{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.right{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.dot{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.dot::before{
+    content: "";
+    height:5px;
+    width:5px;
+    background-color: green;
+    position: absolute;
+    left:0;
+}
+.faint{
+    color:rgba(128, 128, 128, 0.822)
+}
+.active{
+    background-color: rgba(128, 128, 128, 0.444);
+}
